@@ -6,9 +6,11 @@ import tryRoute from "./router.js";
 import mimes from "./mime.js";
 
 const PORT = 8080;
-const ADDRESS = "127.0.0.1";
+const ADDRESS = "0.0.0.0";
 
 const server = createServer((req, res) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+
     if(req.url == "/") {
         res.writeHead(301, { "Location": "/dashboard.html" });
         res.end();
