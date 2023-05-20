@@ -1,0 +1,66 @@
+:root {
+    --header-height: 6em;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+table, td, tr {
+    box-sizing: border-box;
+}
+
+#layout-table {
+    width: 100vw;
+    height: 100vh;
+}
+
+#course-view {
+    height: calc(100vh - var(--header-height) - 1em);
+}
+
+#header {
+    height: var(--header-height);
+}
+
+td {
+    border: 1px solid black;
+    margin: 0px;
+}
+
+tr, table, tbody {
+    padding: 0px;
+    margin: 0px;
+}
+
+.node-completed {
+    background: palegreen !important;
+}
+
+.full-width {
+    width: 100%
+}
+
+#quiz-container {
+    margin: auto;
+    width: 40%;
+}
+
+.quiz-question-title {
+    font-size: 18pt;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, blue, rgb(145, 5, 133));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.image-bg {
+    background-image: url(https://picsum.photos/200), linear-gradient(#0007, #0009);
+    background-blend-mode: overlay;
+    background-position: center;
+}

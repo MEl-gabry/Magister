@@ -1,0 +1,16 @@
+{
+  "name": "magister",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Me",
+  "license": "ISC",
+  "dependencies": {
+    "drawflow": "^0.0.59",
+    "mongodb": "^5.5.0"
+  }
+}

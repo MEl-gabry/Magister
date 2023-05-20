@@ -1,0 +1,13 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 90vh;
+}
+
+button, input[type=text], input[type=password] {
+    padding: 5pt;
+}
+
+* {
+    font-family: sans-serif;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="scripts/template.js" request="/api/me"></script>
+
+        <script type="module" async>
+            if(!(await templateRequest).teacher) location = "/dashboard";
+        </script>
+
+        <title>Teacher View</title>
+        <link rel="stylesheet" href="/styles/global_styles.css">
+    </head>
+    <div id="layout-div">
+        <span style="font-size: 2em;">Welcome, <b class="gradient-text">{name}</b></span>
+        <span style="color: gray;">Teacher Mode: 
+            <b class="gradient-text">{teacher}</b></span>
+        <a href="/api/logout" class="btn btn-info" role="button">Logout</a>
+    </div>
+</html>
